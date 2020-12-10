@@ -1,0 +1,75 @@
+</head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container justify-content-center m-0">
+                <div class="row">
+                    <div class="col-2 align-self-center" >
+                        <a class="navbar-brand "  href="index.php">
+                            <img src="images/2CLISTblanc.png" class="miaou" alt="2C-List Logo">
+                        </a>
+                    </div>
+                    <div class="col-10 ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="nav justify-content-md-end justify-content-center  ">
+                                    <li>
+                                        <a href="profil.php"><button class="btn btn-light">
+                                            Accédez à vos listes
+                                        </button></a>
+                                        <a  href="#"class="text-white text-center " data-toggle="modal" data-target="#Deconnexion"><p class="mb-0"><small>Déconnexion</small></p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12  mt-0  navbar-expand-md">
+
+                                <ul class="nav justify-content-md-end justify-content-center  ">
+                                    <li>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <ul id="navbarTogglerDemo02" class="collapse navbar-collapse navbar-nav justify-content-md-end justify-content-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-2  pb-0 text-white active" href="index.php">ACCUEIL</a>
+                                    </li>
+                                    <li class="nav-item  ">
+                                        <a class="nav-link mt-2  pb-0 text-white" href="nouveaute.php">NOUVEAUTE</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-2  pb-0 text-white" href="note.php">MIEUX NOTES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-2  pb-0 text-white" href="film.php">FILMS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-2  pb-0 text-white" href="enfant.php">ENFANTS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="Deconnexion" tabindex="-1" role="dialog" aria-labelledby="Deconnexion" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" >Déconnexion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                Etes vous sûr de vouloir vous déconnecter?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger " data-dismiss="modal" id="deco">Continuer</button>
+              </div>
+            </div>
+          </div>
+        </div>

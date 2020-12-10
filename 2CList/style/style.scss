@@ -1,0 +1,436 @@
+// page error
+.height-error{
+    height: 400px;
+}
+/* general */
+
+.btn-liste:hover{
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08);
+}
+[tooltip1]:hover::after,[tooltip1]:hover::before {
+   opacity:1
+}
+[tooltip2]:hover::after,[tooltip2]:hover::before {
+   opacity:1
+}
+
+[tooltip1]{
+  margin:20px 60px;
+  position:relative;
+  display:inline-block;
+}
+[tooltip1]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(255,255,255,1) transparent transparent     transparent;
+    z-index: 99;
+    opacity:0;
+}
+
+[tooltip1]::after {
+    content: attr(tooltip1);
+    position: absolute;
+    left:50%;
+    top:-6px;
+    transform: translateX(-50%)   translateY(-100%);
+    background: rgba(255,255,255,1);
+    text-align: center;
+    color: #000;
+    padding:4px 2px;
+    font-size: 12px;
+    min-width: 80px;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 4px 4px;
+    z-index:99;
+    opacity:0;
+}
+
+[tooltip2]{
+  margin:20px 60px;
+  position:relative;
+  display:inline-block;
+}
+[tooltip2]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,1) transparent transparent     transparent;
+    z-index: 99;
+    opacity:0;
+}
+
+[tooltip2]::after {
+    content: attr(tooltip2);
+    position: absolute;
+    left:50%;
+    top:-6px;
+    transform: translateX(-50%)   translateY(-100%);
+    background: rgba(0,0,0,1);
+    text-align: center;
+    color: #fff;
+    padding:4px 2px;
+    font-size: 12px;
+    min-width: 80px;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 4px 4px;
+    z-index:99;
+    opacity:0;
+}
+
+
+[tooltip-position='buttom']::before{
+  top:100%;
+  margin-top:8px;
+  transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+}
+[tooltip-position='bottom']::after{
+  top:100%;
+  margin-top:8px;
+  transform: translateX(-50%) translateY(0%);
+}
+body{
+    width: 100%;
+    font-family: Roboto;
+    font-weight:300;
+}
+h1{
+    font-family: Roboto;
+    font-weight: bold;
+}
+h2{
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+
+}
+
+h3{
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.note-attrib{
+    font-size: 3em;
+}
+.fleche{
+    font-size: 4em;
+}
+.notedone{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 6em;
+}
+.votrenote{
+    font-family: "Roboto Condensed";
+    font-size: 4em;
+    font-weight: 400;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+
+.genre-select{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+
+    background-color: #3e3e3e;
+    color:white;
+}
+.fnt-2{
+    font-family:  'Open Sans';
+}
+
+.btn{
+    border-radius: 0.4rem;
+    font-family:Roboto;
+    font-weight: bold;
+
+}
+
+.btn-liste {
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-width:  2px;
+}
+
+.btn-liste:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-width:  2px;
+}
+
+.btn-liste-selected{
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-width:  2px;
+}
+
+.btn-outline-light{
+        border-width:  3px;
+}
+
+.bg-blanc{
+    background-color: white;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+/* profil */
+.btn-lg-profil {
+    font-size: 1.5em;
+}
+
+/* headers */
+.miaou{
+    /* width: 260%; */
+    width: 70px;
+}
+
+
+/* index */
+
+.image-bg{
+    background-image: url(../images/Section1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* connexion */
+.titreConnexion{
+    font-family:  Roboto;
+    font-weight: bold;
+}
+
+#content{
+    text-align: center;
+    padding-top:  10%;
+        padding-bottom: 5%;
+    text-shadow:    0px 4px 3px rgba(0,0,0,0.4),
+                    0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+.img-home{
+    width:30%;
+}
+
+
+
+/* Liste Film */
+.btn-hasard{
+    border-radius: 2.4rem;
+}
+
+.img-film{
+    width: 100%;
+}
+.titre-film{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.note{
+    font-size: 0.75em;
+}
+.film:hover{
+    background-color: black;
+    color: white !important;
+    cursor: pointer;
+}
+.link-unstyled {
+
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    border: inherit;
+    outline: inherit;
+    box-shadow: inherit;
+    padding: inherit;
+    vertical-align: inherit;
+    cursor: pointer;
+  }
+.link-unstyled:visited {
+
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    border: inherit;
+    outline: inherit;
+    box-shadow: inherit;
+    padding: inherit;
+    vertical-align: inherit;
+    cursor: pointer;
+  }
+  .link-unstyled:hover {
+      font-style: inherit;
+      color: inherit;
+      background-color: transparent;
+      font-size: inherit;
+      text-decoration: none;
+      font-variant: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      font-family: inherit;
+      border-radius: inherit;
+      border: inherit;
+      outline: inherit;
+      box-shadow: inherit;
+      padding: inherit;
+      vertical-align: inherit;
+      cursor: pointer;
+    }
+
+    .link-unstyled:active {
+              font-style: inherit;
+        color: inherit;
+        background-color: transparent;
+        font-size: inherit;
+        text-decoration: none;
+        font-variant: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        font-family: inherit;
+        border-radius: inherit;
+        border: inherit;
+        outline: inherit;
+        box-shadow: inherit;
+        padding: inherit;
+        vertical-align: inherit;
+        cursor: pointer;
+      }
+
+      .link-unstyled:focus {
+
+          font-style: inherit;
+          color: inherit;
+          background-color: transparent;
+          font-size: inherit;
+          text-decoration: none;
+          font-variant: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+          font-family: inherit;
+          border-radius: inherit;
+          border: inherit;
+          outline: inherit;
+          box-shadow: inherit;
+          padding: inherit;
+          vertical-align: inherit;
+          cursor: pointer;
+        }
+        .link-unstyled:active:hover {
+
+            font-style: inherit;
+            color: inherit;
+            background-color: transparent;
+            font-size: inherit;
+            text-decoration: none;
+            font-variant: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            font-family: inherit;
+            border-radius: inherit;
+            border: inherit;
+            outline: inherit;
+            box-shadow: inherit;
+            padding: inherit;
+            vertical-align: inherit;
+            cursor: pointer;
+          }
+
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    .miaou{
+         width: 200%;
+
+    }
+    .img-home{
+        width:40%;
+    }
+    .img-film{
+        width: 400%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .miaou{
+        width: 125%;
+    }
+    .img-home{
+        width:65%;
+    }
+    .img-film{
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .miaou{
+        width: 80%;
+    }
+    .img-home{
+        width:55%;
+    }
+    .img-film{
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   .miaou{
+       width: 70%;
+   }
+
+   .img-home{
+       width:45%;
+   }
+   .img-film{
+       width: 70%;
+   }
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+
+}

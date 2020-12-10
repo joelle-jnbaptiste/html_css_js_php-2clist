@@ -1,0 +1,55 @@
+<div class="row justify-content-center mt-4 mb-5">
+    <div class="col-10 bg-dark pt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-9 mb-3">
+                <div class="input-group">
+                    <input id="search" class="form-control border-secondary py-2" type="text" placeholder="Rechercher un titre, un acteur, un réalisateur....">
+                    <div class="input-group-append">
+                        <div class="btn btn-liste" >
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-9 ">
+                <form>
+                    <div class="form-group">
+                        <select class="custom-select" id="selectTri">
+                            <option selected value="">Tri par :</option>
+                            <option value="1">Du plus ancien au plus récent</option>
+                            <option value="4">Du plus récent au plus ancien</option>
+                            <option value="2">Ordre Alphabétique</option>
+                            <option value="3">Notes</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-9 ">
+                <form>
+                    <div class="form-group">
+                        <select class="custom-select genre-select " id="selectGenre1">
+                            <option selected value="">Genre 1 :</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 col-9 ">
+                <form>
+                    <div class="form-group">
+                        <select class="custom-select genre-select" id="selectGenre2">
+                            <option selected value="">Genre 2 :</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <button id="random" class="col-lg-4 col-md-5 col-8 btn btn-lg btn-liste btn-hasard"type="button" name="button">FILM AU HASARD</button>
+</div>
+<div id = "film">
+</div>
+</div>
